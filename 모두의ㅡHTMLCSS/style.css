@@ -10,7 +10,9 @@
 
 body,
 h1,
-ul {
+h2,
+ul,
+p {
   margin: 0;
   padding: 0;
 }
@@ -65,6 +67,7 @@ header .main-logo {
   line-height: 28px;
   color: #3a2a21;
   margin-right: 182px;
+  margin-left: 10px;
 }
 
 .main-logo span:nth-child(1)::after {
@@ -113,4 +116,129 @@ header .search-btn {
   border-radius: 4px;
   padding-left: 10px;
   padding-top: 10px;
+}
+
+/* 메인 배너 : 라이캣 */
+section:nth-child(1) {
+  width: 1920px;
+  background-color: #ffcf5c;
+}
+.mainBanner-wrapper {
+  position: relative;
+  width: 1550px;
+  height: 700px;
+  background-image: url("./assets/Lycat_3\ 1.png");
+  background-repeat: no-repeat;
+  background-position-y: 19px;
+  margin-left: 7%;
+}
+
+.mainBanner-contents {
+  position: absolute;
+  top: 164px;
+  left: 40%;
+  color: #3a2a21;
+}
+
+.mainBanner-title {
+  font-size: 20px;
+  font-weight: 600;
+  /* line-height: 24px; */
+  color: #000;
+  margin-bottom: 18px;
+}
+
+.mainBanner-txt {
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 100%;
+  text-transform: upperacse;
+  margin-bottom: 18px;
+}
+
+.mainBanner-desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.8;
+  margin-bottom: 18px;
+  padding-left: 14px;
+}
+
+.mainBanner-btn {
+  width: 180px;
+  height: 64px;
+  margin-right: 9px;
+  border: 1px solid #3a2a21;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.mainBanner-btn:nth-child(1) {
+  background-color: #3a2a21;
+  color: #fff;
+}
+
+.mainBanner-btn:nth-child(1):hover {
+  font-weight: bolder;
+  transition: all 0.1s ease-out;
+}
+
+.mainBanner-btn:nth-child(2):hover {
+  background-color: #3a2a21;
+  color: #fff;
+  font-weight: bolder;
+  transition: all 0.3s ease-out;
+}
+
+.mainBanner-aside {
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+.mainBanner-aside .aside-item {
+  position: relative;
+  display: block;
+  width: 124px;
+  height: 171px;
+  border-radius: 10px;
+  background-color: #faf1be;
+}
+
+.aside-item:nth-child(1) {
+  position: relative;
+  margin-bottom: 12px;
+  background-image: url("./assets/image\ 1.png");
+}
+
+.aside-item:nth-child(1)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 124px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #faf1be;
+  z-index: 9;
+}
+
+.aside-item span {
+  display: block;
+  position: absolute;
+  z-index: 99;
+  padding-bottom: 10px;
+  text-align: center;
+  bottom: 0;
+  font-size: 16px;
+  font-weight: 800;
+  padding-left: 17px;
+}
+
+.aside-item:nth-child(1) {
+  color: #436a2c;
+}
+.aside-item:nth-child(2) {
+  color: #063f94;
 }
