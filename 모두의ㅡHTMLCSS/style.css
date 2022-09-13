@@ -11,9 +11,11 @@
 body,
 h1,
 h2,
+h4,
 ul,
 p,
-dd {
+dd,
+figure {
   margin: 0;
   padding: 0;
 }
@@ -248,7 +250,7 @@ section:nth-child(1) {
 
 .tech-stacks-wrapper {
   width: 1225px;
-  margin: 0 auto;
+  margin: 94px auto 0 auto;
 }
 
 .stack-list {
@@ -284,4 +286,102 @@ section:nth-child(1) {
   position: absolute;
   left: 0;
   top: 7.5px;
+}
+
+/*FLOAT CLEARFIX*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.float--left {
+  float: left;
+}
+
+.float--right {
+  float: right;
+}
+
+/* 일정 */
+
+.schedule-wrapper {
+  width: 1224px;
+  margin: 90px auto 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 2fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "img1 img3"
+    "img2 img3";
+  gap: 24px;
+}
+
+.schedule-card {
+  position: relative;
+  width: 600px;
+  height: 288px;
+  border-radius: 10px;
+  background-color: green;
+}
+
+.schedule-card .schedule-desc {
+  position: absolute;
+  z-index: 9;
+
+  padding-top: 30px;
+  padding-left: 32px;
+}
+.schedule-card time {
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.schedule-card h4 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.schedule-card:nth-child(1) {
+  grid-area: img1;
+  background-color: #e37066;
+  color: #fff;
+}
+.schedule-card:nth-child(2) {
+  grid-area: img2;
+  background-color: #cbdff7;
+  color: #000;
+}
+
+.schedule-card:nth-child(3) {
+  grid-area: img3;
+  height: 600px;
+  background-color: #d2e579;
+  color: #000;
+}
+
+.schedule-card:nth-child(1) img {
+  position: absolute;
+  left: 213px;
+  top: 25px;
+  border-radius: 10px;
+}
+
+.schedule-card:nth-child(2) img {
+  position: absolute;
+  left: 269px;
+  top: 2px;
+  border-radius: 10px;
+}
+
+.schedule-card:nth-child(3) img {
+  position: absolute;
+  left: 168px;
+  top: 92px;
+  border-radius: 10px;
 }
