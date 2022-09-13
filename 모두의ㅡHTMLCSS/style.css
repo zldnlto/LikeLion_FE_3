@@ -8,6 +8,10 @@
   color: inherit;
 }
 
+.hidden {
+  display: none;
+}
+
 body,
 h1,
 h2,
@@ -288,22 +292,7 @@ section:nth-child(1) {
   top: 7.5px;
 }
 
-/*FLOAT CLEARFIX*/
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-.float--left {
-  float: left;
-}
-
-.float--right {
-  float: right;
-}
-
-/* 일정 */
+/* 위니비언의 회사생활 */
 
 .schedule-wrapper {
   width: 1224px;
@@ -384,4 +373,101 @@ section:nth-child(1) {
   left: 168px;
   top: 92px;
   border-radius: 10px;
+}
+
+/* 게시판 */
+
+.board-wrapper {
+  width: 1224px;
+  margin: 216px auto 0 auto;
+}
+
+.board-heading {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.btn-tab {
+  width: 200px;
+  height: 40px;
+  background-color: #f5f5f5;
+}
+
+.tab-list {
+  display: flex;
+  margin-top: 89px;
+}
+
+.tab-list .btn-tab {
+  margin-right: 4px;
+  text-align: center;
+}
+
+.post-list {
+  width: 1224px;
+}
+
+.post-num {
+  font-size: 20px;
+  line-height: 24;
+  text-align: center;
+}
+.btn-tab .post-list li a {
+  display: inline;
+}
+
+.post-contents {
+  height: 82px;
+}
+
+/* footer */
+
+footer {
+  height: 200px;
+}
+
+.footer-wrapper {
+  position: relative;
+  width: 1225px;
+  margin: auto;
+}
+
+.footer-logo {
+  float: left;
+  position: relative;
+  width: 131px;
+  font-family: "yg-jalnan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #d9d9d9;
+  margin-top: 66px;
+}
+
+.footer-logo span:nth-child(1)::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  width: 56px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #d9d9d9;
+}
+
+.footer-logo address {
+}
+
+.footer-wrapper address {
+  position: absolute;
+  top: 77px;
+  left: 312px;
+}
+
+.footer-wrapper small {
+  position: absolute;
+  top: 86px;
+  right: 0;
 }
