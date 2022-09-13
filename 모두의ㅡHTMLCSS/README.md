@@ -13,3 +13,4 @@
 - search 버튼 동작
 
 - aside 부분 30분 요약강좌 css로 빚어보기
+- tech-stack의 stack-items 부분 가상요소선택자로 만든 불릿이 자식 하나에만 적용되는 것 왜일까 ..ㄱ-

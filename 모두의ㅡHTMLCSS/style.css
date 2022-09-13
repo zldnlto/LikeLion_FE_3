@@ -12,7 +12,8 @@ body,
 h1,
 h2,
 ul,
-p {
+p,
+dd {
   margin: 0;
   padding: 0;
 }
@@ -241,4 +242,46 @@ section:nth-child(1) {
 }
 .aside-item:nth-child(2) {
   color: #063f94;
+}
+
+/* 웹 언어와 즐거운 회사생활*/
+
+.tech-stacks-wrapper {
+  width: 1225px;
+  margin: 0 auto;
+}
+
+.stack-list {
+  display: flex;
+}
+
+.stack-items {
+  width: 340px;
+  margin-right: 102px;
+}
+
+.stack-items dt {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.stack-items dd {
+  position: relative;
+  color: #767676;
+  padding-left: 10px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.stack-items dd p::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #767676;
+  position: absolute;
+  left: 0;
+  top: 7.5px;
 }
