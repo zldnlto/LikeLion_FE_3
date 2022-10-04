@@ -1,0 +1,107 @@
+/* reset */
+
+* {
+  vertical-align: bottom;
+  font-size: inherit;
+  line-height: 1;
+}
+
+button {
+  all: unset;
+}
+
+p {
+  margin: 0;
+}
+
+/* common */
+
+.ir {
+  position: absolute;
+  clip-path: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+/*FLOAT CLEARFIX*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.float--left {
+  float: left;
+}
+
+.float--right {
+  float: right;
+}
+
+/* style */
+body {
+  padding: 10%;
+}
+
+.wrapper {
+  max-width: 350px;
+}
+
+#login {
+  /* width: 26.5em; */
+  padding: 19px 16px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  font-size: 12px;
+}
+/* padding: 0 9rem; */
+.btn-login {
+  padding: 1em 9em;
+  margin-top: 1.33em;
+  background-color: #711bff;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.img-logo {
+  display: inline-block;
+  width: 64px;
+  height: 18px;
+  background: url("./assets/weniv-logo.png") no-repeat;
+  background-size: contain;
+}
+
+.sub-menu {
+  margin-top: 1.4em;
+  color: #767676;
+}
+
+.find::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background: url("./assets/icon-lock.png");
+  background-size: contain;
+  vertical-align: bottom;
+}
+
+.find::after {
+  content: "|";
+  margin-left: 4px;
+}
+
+.join::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background: url("./assets/icon-user.png");
+  background-size: contain;
+  vertical-align: bottom;
+}
